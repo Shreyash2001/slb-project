@@ -1,0 +1,43 @@
+.home_left {
+    padding: 30px 30px;
+    height: 92vh;
+    width: 16vw;
+    background-color: rgba(46, 86, 247, 0.649);
+}
+
+.home_right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
+
+.home {
+    padding: 10px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.home > img {
+    width: 400px;
+    height: 300px;
+    border-radius: 22px;
+    transition: transform 450ms;
+}
+
+.home > img:hover {
+    transform: scale(1.08);
+}
+
+.home > h1 {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    color: #fff;
+    font-size: 40px;
+}
+
