@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import "./Login.css"
+import React, { useState } from 'react';
+import "./Login.css";
 import { Button } from '@mui/material';
 
 function Login() {
@@ -28,6 +28,6 @@ function Login() {
             </div>
         </div>
     )
-}
+};
 
 export default Login
