@@ -7,6 +7,7 @@ import {
 import Login from './Login';
 import Home from './Home';
 import Crew from "./Crew";
+import Layout from "./Layout";
 
 function App() {
   return (
@@ -16,10 +17,10 @@ function App() {
           <Login />
         </Route>
         <Route path="/crew">
-          <Crew />
+          <Layout child={<Crew />} />
         </Route>
         <Route path="/">
-          <Home />
+          <Layout child={<Home />} />
         </Route>
       </Switch>
     </Router>
