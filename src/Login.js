@@ -9,7 +9,7 @@ function Login() {
     const history = useHistory();
     const handleSubmit = () => {
         history.push("/");
-    }
+    };
 
     return (
         <div className="login">

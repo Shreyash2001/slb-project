@@ -11,20 +11,20 @@
     flex-wrap: wrap;
     position: absolute;
     left: 30%;
-    top: 10%;
+    top: 5%;
 }
 
 .home {
     padding: 10px;
-    margin-right: 70px;
+    margin-right: 40px;
     margin-bottom: 10px;
     cursor: pointer;
     position: relative;
 }
 
 .home > img {
-    width: 400px;
-    height: 300px;
+    width: 24vw;
+    height: 40vh;
     border-radius: 22px;
     transition: transform 450ms;
 }
@@ -36,8 +36,8 @@
 .home > h1 {
     position: absolute;
     top: 25%;
-    left: 15%;
+    left: 12%;
     color: #fff;
-    font-size: 40px;
+    font-size: 35px;
 }
 
