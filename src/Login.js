@@ -19,7 +19,7 @@ function Login() {
 
             <div className="login__right">
                 <div>
-                    <h1>Welcome, to Drilling Dashboard</h1>
+                    <h1>Login to DMS</h1>
                 </div>
                 <div className="login__rightForm">
                     <form onSubmit={handleSubmit}>
