@@ -5,14 +5,13 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 
 function createData(
-  name: string,
-  calories: number,
-  fat: number,
-  carbs: number,
-  protein: number
+  name,
+  calories,
+  fat,
+  carbs,
+  protein
 ) {
   return { name, calories, fat, carbs, protein };
 }
