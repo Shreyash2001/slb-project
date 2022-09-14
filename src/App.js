@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Login from './Login';
 import Home from './Home';
-import Crew from "./Crew";
+import MaterialTable from "./MaterialTable";
 import Layout from "./Layout";
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
         <Route path="/login">
           <Login />
         </Route>
-        <Route path="/crew">
-          <Layout child={<Crew />} />
+        <Route path="/material">
+          <Layout child={<MaterialTable />} />
         </Route>
         <Route path="/">
           <Layout child={<Home />} />

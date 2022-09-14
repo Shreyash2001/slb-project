@@ -22,7 +22,7 @@ function Layout({ child }) {
           src="https://careers.slb.com/-/media/images/careers/early-careers/operations/early-careers-operations-combo.ashx"
         />
         <h1 style={{ margin: "0px", fontSize: "23px", color: "#fff" }}>
-          Ahmed Manager
+          Ahmad Manager
         </h1>
         <span
           style={{
