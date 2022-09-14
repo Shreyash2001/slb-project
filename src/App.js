@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import Login from './Login';
 import Home from './Home';
+import MaterialTable from "./MaterialTable";
+import Layout from "./Layout";
 
 function App() {
   return (
@@ -14,8 +16,11 @@ function App() {
         <Route path="/login">
           <Login />
         </Route>
+        <Route path="/material">
+          <Layout child={<MaterialTable />} />
+        </Route>
         <Route path="/">
-          <Home />
+          <Layout child={<Home />} />
         </Route>
       </Switch>
     </Router>
