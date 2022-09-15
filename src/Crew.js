@@ -6,7 +6,6 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Checkbox from '@mui/material/Checkbox';
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -24,16 +23,16 @@ function createData(
 }
   
 const rows = [  
-  createData('Frozen yoghurt', "Muskan", 6.0, 24, 4.0),
-  createData('Ice cream sandwich', "Nishtha", 9.0, 37, 4.3),
-  createData('Eclair', "Rutuja", 16.0, 24, 6.0),
-  createData('Cupcake', "Akshada", 3.7, 67, 4.3),
-  createData('Gingerbread', "Varsha", 16.0, 49, 3.9),
-  createData('Gingerbread', "Bidisha", 16.0, 49, 3.9),
-  createData('Gingerbread', "Pratish", 16.0, 49, 3.9),
-  createData('Gingerbread', "Sumit", 16.0, 49, 3.9),
-  createData('Gingerbread', "Shreyash", 16.0, 49, 3.9),
-  createData('Gingerbread', "Tushar", 16.0, 49, 3.9),
+  createData('1', "Muskan", 6.0, 24, 4.0),
+  createData('2', "Nistha", 9.0, 37, 4.3),
+  createData('3', "Rutuja", 16.0, 24, 6.0),
+  createData('4', "Akshada", 3.7, 67, 4.3),
+  createData('5', "Varsha", 16.0, 49, 3.9),
+  createData('6', "Bidisha", 16.0, 49, 3.9),
+  createData('7', "Pratish", 16.0, 49, 3.9),
+  createData('8', "Sumit", 16.0, 49, 3.9),
+  createData('9', "Shreyash", 16.0, 49, 3.9),
+  createData('10', "Tushar", 16.0, 49, 3.9),
   ];
 
 export default function BasicTable() {
@@ -48,7 +47,7 @@ export default function BasicTable() {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell style={{fontSize:"20px"}}>Select</TableCell>
+            <TableCell style={{fontSize:"20px"}}>Sr. No</TableCell>
             <TableCell style={{fontSize:"20px"}} align="right">Name</TableCell>
             <TableCell style={{fontSize:"20px"}} align="right">From Date</TableCell>
             <TableCell style={{fontSize:"20px"}} align="right">To Date</TableCell>
@@ -63,7 +62,7 @@ export default function BasicTable() {
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                <Checkbox />
+                {row.name}
               </TableCell>
               <TableCell align="right">
                   <h3>{row.calories}</h3>
@@ -84,11 +83,11 @@ export default function BasicTable() {
                     label="Rigs"
                     onChange={handleChange}
                     >
-                    <MenuItem value={10}>Digboi</MenuItem>
-                    <MenuItem value={20}>Digboi</MenuItem>
-                    <MenuItem value={30}>Kakinada</MenuItem>
-                    <MenuItem value={40}>Kakinada</MenuItem>
-                    <MenuItem value={50}>Bombay High, Arabian Sea</MenuItem>
+                    <MenuItem value={10}>A</MenuItem>
+                    <MenuItem value={20}>B</MenuItem>
+                    <MenuItem value={30}>C</MenuItem>
+                    <MenuItem value={40}>D</MenuItem>
+                    <MenuItem value={50}>E</MenuItem>
                     </Select>
                 </FormControl>
                 </Box>
@@ -103,10 +102,10 @@ export default function BasicTable() {
                     label="Shift"
                     onChange={handleChange}
                     >
-                    <MenuItem value={10}>Team Alpha 1</MenuItem>
-                    <MenuItem value={20}>Team Alpha 2</MenuItem>
-                    <MenuItem value={20}>Team Beta 1</MenuItem>
-                    <MenuItem value={20}>Team Beta 2</MenuItem>
+                    <MenuItem value={10}>12AM - 6AM</MenuItem>
+                    <MenuItem value={20}>6AM - 12PM</MenuItem>
+                    <MenuItem value={20}>12PM - 6PM</MenuItem>
+                    <MenuItem value={20}>6PM - 12am</MenuItem>
                     </Select>
                 </FormControl>
                 </Box>
