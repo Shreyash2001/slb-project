@@ -8,11 +8,11 @@ import TableRow from "@mui/material/TableRow";
 import Button from '@mui/material/Button';
 
 function createData(
-  name: string,
-  calories: number,
-  fat: number,
-  carbs: number,
-  protein: number
+  name,
+  calories,
+  fat,
+  carbs,
+  protein
 ) {
   return { name, calories, fat, carbs, protein };
 }
