@@ -23,16 +23,16 @@ function createData(
 }
   
 const rows = [  
-  createData('1', "Muskan", 6.0, 24, 4.0),
-  createData('2', "Nistha", 9.0, 37, 4.3),
-  createData('3', "Rutuja", 16.0, 24, 6.0),
-  createData('4', "Akshada", 3.7, 67, 4.3),
-  createData('5', "Varsha", 16.0, 49, 3.9),
-  createData('6', "Bidisha", 16.0, 49, 3.9),
-  createData('7', "Pratish", 16.0, 49, 3.9),
-  createData('8', "Sumit", 16.0, 49, 3.9),
-  createData('9', "Shreyash", 16.0, 49, 3.9),
-  createData('10', "Tushar", 16.0, 49, 3.9),
+  createData('1', "Muskan"),
+  createData('2', "Nistha"),
+  createData('3', "Rutuja"),
+  createData('4', "Akshada"),
+  createData('5', "Varsha"),
+  createData('6', "Bidisha"),
+  createData('7', "Pratish"),
+  createData('8', "Sumit"),
+  createData('9', "Shreyash"),
+  createData('10', "Tushar"),
   ];
 
 export default function BasicTable() {
