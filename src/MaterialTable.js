@@ -5,7 +5,7 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
+import Button from '@mui/material/Button';
 
 function createData(
   name: string,
@@ -30,7 +30,10 @@ export default function BasicTable() {
     <TableContainer>
         <div style={{marginLeft:"50px", marginTop:"0px", display:"flex", alignItems:"center", justifyContent:"space-evenly"}}>
             <h1>Material Board</h1>
-            <div style={{width:"20px", height:"20px", backgroundColor:"red"}} />
+            <div style={{display:"flex", alignItems:"center"}}>
+                <div style={{width:"20px", height:"20px", backgroundColor:"red"}} />
+                <p style={{marginLeft:"5px", color:"red"}}>Refill the stocks</p>
+            </div>
         </div>
       <Table
         sx={{ maxWidth: 850 }}
@@ -88,6 +91,9 @@ export default function BasicTable() {
           ))}
         </TableBody>
       </Table>
+      <div style={{marginLeft:"50px"}}>
+          <Button style={{width:"100px", backgroundColor:"red", color:"#fff"}}>Raise</Button>
+      </div>
     </TableContainer>
   );
 }

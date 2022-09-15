@@ -1,10 +1,11 @@
-import react from "react";
-import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
+import React from "react";
 
 function Crew() {
-    return {
-
-    }
+    return (
+        <div>
+            <h1>Hello</h1>
+        </div>
+    )
 };
 
 export default Crew;
