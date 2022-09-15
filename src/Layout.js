@@ -2,13 +2,32 @@ import React from "react";
 import { Avatar } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useHistory } from "react-router-dom";
+import "./Layout.css";
 
 function Layout({ child }) {
-  console.log(window.location.hash.split("/")[1]);
+  const url = window.location.hash.split("/")[1];
+  console.log(window.location.hash.split("/")[1].length);
   const history = useHistory();
   const logout = () => {
     history.push("/login");
   };
+  
+  const gotoHome = () => {
+      history.push("/");
+  }
+  const gotoCrew = () => {
+      history.push("/crew");
+  }
+  const gotoMaterial = () => {
+      history.push("/material");
+  }
+  const gotoDashboard = () => {
+      history.push("/dashboard");
+  }
+  const gotoRisk = () => {
+      history.push("/risk");
+  }
+  
   return (
     <div style={{ display: "flex" }}>
       <div className="home_left">
@@ -34,9 +53,41 @@ function Layout({ child }) {
         >
           Field Manager
         </span>
+        <div>
+            {
+                url.length !== 0 
+                &&
+                (
+                <div className="buttons">
+                    <Button onClick={gotoHome}>Home</Button>
+                        {
+                        url === "crew" 
+                        ? 
+                        <Button onClick={gotoMaterial}>Material Planning</Button>
+                        : 
+                        <Button onClick={gotoCrew}>Crew Planning</Button>
+                        }
+                        
+                        {
+                        url === "dashboard" 
+                        ? 
+                        <Button onClick={gotoMaterial}>Material Planning</Button>
+                        : 
+                        <Button onClick={gotoDashboard}>Dashboard</Button>
+                        }
+                        
+                        {
+                        url !== "risk"
+                        &&
+                        <Button onClick={gotoRisk}>Potential Risk</Button>
+                        }
+                </div>
+            )} 
+            
+        </div>
         <div style={{ position: "absolute", bottom: "30px" }}>
           <Button
-            style={{ border: "1px solid #fff", color: "#fff", width: "200px" }}
+            style={{ backgroundColor:"#fff", color: "rgba(46, 86, 247, 0.649)", width: "200px" }}
             onClick={logout}
           >
             Logout
