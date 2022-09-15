@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar } from "@mui/material";
 import Button from "@mui/material/Button";
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function Layout({ child }) {
   console.log(window.location.hash.split("/")[1]);
