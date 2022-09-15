@@ -6,7 +6,7 @@ import "./Layout.css";
 
 function Layout({ child }) {
   const url = window.location.hash.split("/")[1];
-  console.log(window.location.hash.split("/")[1].length);
+//   console.log(window.location.hash.split("/")[1].length);
   const history = useHistory();
   const logout = () => {
     history.push("/login");
