@@ -1,0 +1,9 @@
+.table_container {
+    overflow-y: scroll;
+    height: 80vh;
+    padding: 40px 10px 0px 10px;
+}
+
+.table_container::-webkit-scrollbar {
+    display: none;
+}
