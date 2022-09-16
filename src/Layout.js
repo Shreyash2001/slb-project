@@ -79,7 +79,7 @@ function Layout({ child }) {
                         {
                         url !== "risk"
                         ?
-                        <Button onClick={gotoRisk}>Potential Risk</Button>
+                        <Button onClick={gotoRisk}>Risk Register</Button>
                         :
                         <Button onClick={gotoMaterial}>Material Planning</Button>
                         }
