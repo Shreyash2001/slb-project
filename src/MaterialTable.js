@@ -5,15 +5,9 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 
-function createData(
-  name,
-  calories,
-  fat,
-  carbs,
-  protein
-) {
+function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
 }
 
@@ -28,19 +22,32 @@ const rows = [
 export default function BasicTable() {
   return (
     <TableContainer>
-        <div style={{marginLeft:"50px", marginTop:"0px", display:"flex", alignItems:"center", justifyContent:"space-evenly"}}>
-            <h1>Material Board</h1>
-            <div style={{display:"flex", alignItems:"center"}}>
-                <div style={{width:"20px", height:"20px", backgroundColor:"red"}} />
-                <p style={{marginLeft:"5px", color:"red"}}>Refill the stocks</p>
-            </div>
+      <div
+        style={{
+          marginLeft: "2rem",
+          //   backgroundColor: "red",
+          marginTop: "0px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <h1>Material Board</h1>
+        <div
+          style={{ marginRight: "8rem", display: "flex", alignItems: "center" }}
+        >
+          <div
+            style={{ width: "20px", height: "20px", backgroundColor: "red" }}
+          />
+          <p style={{ marginLeft: "5px", color: "red" }}>Refill the stocks</p>
         </div>
+      </div>
       <Table
         sx={{ maxWidth: 850 }}
         style={{
           boxShadow:
             "0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%)",
-          margin: "2rem 2rem",
+          margin: "1rem 2rem",
         }}
       >
         <TableHead>
@@ -71,28 +78,52 @@ export default function BasicTable() {
               >
                 {row.calories}
               </TableCell>
-              <TableCell style={{
+              <TableCell
+                style={{
                   backgroundColor: `${row.fat < 30 ? "red" : "white"}`,
                   color: `${row.fat < 30 ? "white" : "black"}`,
-                }} align="right">{row.fat}</TableCell>
-              <TableCell style={{
+                }}
+                align="right"
+              >
+                {row.fat}
+              </TableCell>
+              <TableCell
+                style={{
                   backgroundColor: `${row.carbs < 30 ? "red" : "white"}`,
                   color: `${row.carbs < 30 ? "white" : "black"}`,
-                }} align="right">{row.carbs}</TableCell>
-              <TableCell style={{
+                }}
+                align="right"
+              >
+                {row.carbs}
+              </TableCell>
+              <TableCell
+                style={{
                   backgroundColor: `${row.protein < 30 ? "red" : "white"}`,
                   color: `${row.protein < 30 ? "white" : "black"}`,
-                }} align="right">{row.protein}</TableCell>
-              <TableCell style={{
+                }}
+                align="right"
+              >
+                {row.protein}
+              </TableCell>
+              <TableCell
+                style={{
                   backgroundColor: `${row.protein < 30 ? "red" : "white"}`,
                   color: `${row.protein < 30 ? "white" : "black"}`,
-                }} align="right">{row.protein}</TableCell>
+                }}
+                align="right"
+              >
+                {row.protein}
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
-      <div style={{marginLeft:"50px"}}>
-          <Button style={{width:"100px", backgroundColor:"red", color:"#fff"}}>Raise</Button>
+      <div style={{ marginLeft: "2rem" }}>
+        <Button
+          style={{ width: "100px", backgroundColor: "red", color: "#fff", textTransform:"inherit" }}
+        >
+          Raise
+        </Button>
       </div>
     </TableContainer>
   );

@@ -4,7 +4,7 @@ import {useHistory} from "react-router-dom"
 
 function Home() {
     const history = useHistory();
-    const gotoCrew = () => {
+    const gotoCrew = () => {    
         history.push("/crew")
     };
     const gotoMaterial = () => {

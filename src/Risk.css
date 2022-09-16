@@ -1,0 +1,21 @@
+.button {
+  width: 100px !important;
+  border: 1px solid red !important;
+  color: red !important;
+  text-transform: inherit !important;
+}
+
+.button:hover {
+  background-color: red !important;
+  color: #fff !important;
+}
+.disabled.button {
+  border: none !important;
+  color: grey !important;
+  background-color: lightgray !important;
+}
+
+.MuiChip-root {
+  opacity: 0.8;
+  width: 120px !important;
+}
