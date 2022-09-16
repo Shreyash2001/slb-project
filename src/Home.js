@@ -21,7 +21,7 @@ function Home() {
         <div className="home_right">
             <div onClick={gotoCrew} className="home">
                 <img src="https://careers.slb.com/-/media/images/careers/home/home-combo-3.ashx" alt="" />
-                <h1>Crew Planning</h1>
+                <h1>Crew & Job Scheduling</h1>
             </div>
             <div onClick={gotoMaterial} className="home">
                 <img src="https://etimg.etb2bimg.com/photo/87207991.cms" alt="" />
@@ -33,7 +33,7 @@ function Home() {
             </div>
             <div onClick={gotoPotentialRisk} className="home">
                 <img src="https://www.safetyservicescompany.com/wp-content/uploads/2021/04/cpr-first-aid-aed-training.jpeg" alt="" />
-                <h1>Potential Risk</h1>
+                <h1>Risk Register</h1>
             </div>
         </div>
     </div>
