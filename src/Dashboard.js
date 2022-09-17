@@ -48,7 +48,7 @@ function Dashboard() {
   
   const pieChart = () => {
       return (
-          <div>
+          <div className="pieChart">
               <div>
                   
               </div>
