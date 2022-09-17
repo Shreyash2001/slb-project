@@ -44,6 +44,16 @@ function Dashboard() {
               </div>
           </div>
       )
+  };
+  
+  const pieChart = () => {
+      return (
+          <div>
+              <div>
+                  
+              </div>
+          </div>
+      )
   }
 
     return (
@@ -62,16 +72,10 @@ function Dashboard() {
                     {innerCards("Material", 80)}
                     {innerCards("Risk",10)}
                 </div>
-                
-                <div>
-                    <div>
-                        
-                    </div>
-                </div>
-                
-                <div></div>
             </div>
-            <div></div>
+            <div>
+                {pieChart()}
+            </div>
             <div></div>
             <div></div>
         </div>

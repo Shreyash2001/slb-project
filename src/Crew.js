@@ -23,16 +23,16 @@ function createData(
 }
   
 const rows = [  
-  createData('1', "Muskan"),
-  createData('2', "Nistha"),
-  createData('3', "Rutuja"),
-  createData('4', "Akshada"),
-  createData('5', "Varsha"),
-  createData('6', "Bidisha"),
-  createData('7', "Pratish"),
-  createData('8', "Sumit"),
-  createData('9', "Shreyash"),
-  createData('10', "Tushar"),
+  createData('1', "Muskan", "Field Manager"),
+  createData('2', "Nistha", "Field Manager"),
+  createData('3', "Rutuja", "Field Manager"),
+  createData('4', "Akshada", "Field Manager"),
+  createData('5', "Varsha", "Field Manager"),
+  createData('6', "Bidisha", "Field Manager"),
+  createData('7', "Pratish", "Field Manager"),
+  createData('8', "Sumit", "Field Manager"),
+  createData('9', "Shreyash", "Field Manager"),
+  createData('10', "Tushar", "Field Manager"),
   ];
 
 export default function BasicTable() {
@@ -49,6 +49,7 @@ export default function BasicTable() {
           <TableRow>
             <TableCell style={{fontSize:"20px"}}>Sr. No</TableCell>
             <TableCell style={{fontSize:"20px"}} align="right">Name</TableCell>
+            <TableCell style={{fontSize:"20px"}} align="right">Roles</TableCell>
             <TableCell style={{fontSize:"20px"}} align="right">From Date</TableCell>
             <TableCell style={{fontSize:"20px"}} align="right">To Date</TableCell>
             <TableCell style={{fontSize:"20px"}} align="right">Rig</TableCell>
@@ -66,6 +67,9 @@ export default function BasicTable() {
               </TableCell>
               <TableCell align="right">
                   <h3>{row.calories}</h3>
+              </TableCell>
+              <TableCell align="right">
+                  <h4>{row.fat}</h4>
               </TableCell>
               <TableCell align="right">
                   <input type="date" style={{padding:"15px"}} />
