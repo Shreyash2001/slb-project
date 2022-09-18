@@ -36,11 +36,11 @@ function Dashboard() {
   const innerCards = (name,percentage) => {
       return (
           <div className="card">
-              <div style={{paddingLeft:"20px"}}>
-                  <h2 style={{color:"#fff", marginBottom:"0px"}}>{name}</h2>
-              </div>
               <div style={{paddingLeft:"10px"}}>
-                  <h1 style={{color:"#fff", marginTop:"0px", fontSize:"45px"}}>{percentage}%</h1>
+                  <h2 style={{color:"#fff", marginBottom:"0px", fontSize:"20px"}}>{name}</h2>
+              </div>
+              <div style={{paddingLeft:"8px"}}>
+                  <h1 style={{color:"#fff", marginTop:"0px", fontSize:"40px"}}>{percentage}%</h1>
               </div>
           </div>
       )
@@ -49,6 +49,16 @@ function Dashboard() {
   const pieChart = () => {
       return (
           <div className="pieChart">
+              <div>
+                  
+              </div>
+          </div>
+      )
+  }
+  
+  const barGraph = () => {
+      return (
+          <div>
               <div>
                   
               </div>
@@ -76,8 +86,12 @@ function Dashboard() {
             <div>
                 {pieChart()}
             </div>
-            <div></div>
-            <div></div>
+            <div>
+                {pieChart()}
+            </div>
+            <div>
+                
+            </div>
         </div>
     )
 };

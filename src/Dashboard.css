@@ -2,16 +2,21 @@
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    overflow-y: scroll;
+    height: 92vh;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
 }
 
 .rig_data {
-    max-width: 600px;
-    max-height: 300px;
-    min-width: 400px;
-    min-height: 300px;
+    width: 40vw;
+    height: 48vh;
     background-color: beige;
     padding: 10px;
     border-radius: 22px;
+    margin-bottom: 20px;
 }
 
 .upper_name {
@@ -26,7 +31,7 @@
     height:120px;
     border-radius: 22px;
     background-color: lightgray;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 .innerCards_container {
@@ -37,9 +42,9 @@
 }
 
 .pieChart {
-    width: 350px;
-    height: 320px;
-    background-color: #dba611c9;
+    width: 26vw;
+    height: 52vh;
+    background-color: #F9EAC2;
     border-radius: 22px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
