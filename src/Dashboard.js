@@ -4,8 +4,19 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { PieChart, Pie, Tooltip, ResponsiveContainer } from 'recharts';
 
 function Dashboard() {
+    const data01 = [
+        { name: 'Group A', value: 400 },
+        { name: 'Group B', value: 300 },
+        { name: 'Group C', value: 300 },
+        { name: 'Group D', value: 200 },
+        { name: 'Group E', value: 278 },
+        { name: 'Group F', value: 189 },
+      ];
+      
+
   const [rig, setRig] = React.useState('');
 
   const handleChange = (event) => {
@@ -50,7 +61,23 @@ function Dashboard() {
       return (
           <div className="pieChart">
               <div>
-                  
+              <div>
+                  <ResponsiveContainer width={380} height={346}>
+                    <PieChart width={600} height={600}>
+                    <Pie
+                        dataKey="value"
+                        isAnimationActive={false}
+                        data={data01}
+                        cx="50%"
+                        cy="50%"
+                        outerRadius={80}
+                        fill="#8884d8"
+                        label
+                    />
+                    <Tooltip />
+                    </PieChart>
+                </ResponsiveContainer>
+              </div>
               </div>
           </div>
       )
@@ -58,10 +85,8 @@ function Dashboard() {
   
   const barGraph = () => {
       return (
-          <div>
-              <div>
-                  
-              </div>
+          <div className="bargraph">
+              
           </div>
       )
   }
@@ -90,7 +115,7 @@ function Dashboard() {
                 {pieChart()}
             </div>
             <div>
-                
+                {barGraph()}
             </div>
         </div>
     )
