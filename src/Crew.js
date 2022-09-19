@@ -24,15 +24,15 @@ function createData(
   
 const rows = [  
   createData('1', "Muskan", "Field Manager"),
-  createData('2', "Nistha", "Field Manager"),
+  createData('2', "Nistha", "Sampling Specialist"),
   createData('3', "Rutuja", "Field Manager"),
-  createData('4', "Akshada", "Field Manager"),
+  createData('4', "Akshada", "Coring Specialist"),
   createData('5', "Varsha", "Field Manager"),
-  createData('6', "Bidisha", "Field Manager"),
-  createData('7', "Pratish", "Field Manager"),
-  createData('8', "Sumit", "Field Manager"),
-  createData('9', "Shreyash", "Field Manager"),
-  createData('10', "Tushar", "Field Manager"),
+  createData('6', "Bidisha", "Capstan Specialist"),
+  createData('7', "Pratish", "Operator"),
+  createData('8', "Sumit", "Sampling Specialist"),
+  createData('9', "Shreyash", "Coring Specialist"),
+  createData('10', "Tushar", "Operator"),
   ];
 
 export default function BasicTable() {
@@ -46,6 +46,7 @@ export default function BasicTable() {
       
     <TableContainer className="table_container">
         <h1 style={{margin:"-2rem 0rem 2rem 0rem"}}>Crew & Job Scheduling</h1>
+    <div style={{backgroundColor:"beige", borderRadius:"22px", padding:"10px"}}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -120,6 +121,7 @@ export default function BasicTable() {
           ))}
         </TableBody>
       </Table>
+      </div>
     </TableContainer>
   );
 }

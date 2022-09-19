@@ -24,7 +24,7 @@ function Home() {
                 <h1>Crew & Job Scheduling</h1>
             </div>
             <div onClick={gotoMaterial} className="home">
-                <img style={{filter: 'blur(0.8px)'}} src="https://etimg.etb2bimg.com/photo/87207991.cms" alt="" />
+                <img style={{filter: 'blur(0.8px)'}} src="https://www.slb.com/-/media/files/sur/tech-report/texas-property-management-tr-a.ashx" alt="" />
                 <h1>Material Planning</h1>
             </div>
             <div onClick={gotoDashboard} className="home">
