@@ -44,6 +44,27 @@ function Risk() {
         width: "100%",
       }}
     >
+        <h1 style={{margin:"-2rem 0rem 2rem 0rem"}}>Risk Register</h1>
+        
+        <div
+          
+          style={{
+            display: "flex",
+            width: "100%",
+            // justifyContent: "space-between",
+            alignItems: "center",
+            padding: "0rem 0.5rem",
+            margin: "-0.5rem 0rem",
+          }}
+        >
+          <p>Risk Name</p>
+          <p style={{marginLeft:'10rem'}}>Date</p>
+          <p style={{marginLeft:'15rem'}}>Status</p>
+          <p>
+              
+          </p>
+          
+        </div>
       {data.map((d, idx) => (
         <div
           key={idx}
@@ -59,7 +80,7 @@ function Risk() {
           }}
         >
           <p>{d.name}</p>
-          <p>{d.date.toLocaleDateString()}</p>
+          <p>{d?.date.toLocaleDateString()}</p>
           <Chip
             color={checker(d.status) ? "success" : "error"}
             label={d.status}
