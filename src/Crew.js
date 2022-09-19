@@ -43,7 +43,9 @@ export default function BasicTable() {
     console.log(rig);
   };
   return (
+      
     <TableContainer className="table_container">
+        <h1 style={{margin:"-2rem 0rem 2rem 0rem"}}>Crew & Job Scheduling</h1>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
