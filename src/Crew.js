@@ -11,6 +11,8 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import Button from "@mui/material/Button";
+import Modal from '@mui/material/Modal';
 
 function createData(
   name,
@@ -36,6 +38,22 @@ const rows = [
   ];
 
 export default function BasicTable() {
+    const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    height: 300,
+    bgcolor: '#fff',
+    boxShadow: 24,
+    p: 4,
+    outline:'none'
+  };
+  
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
     const [rig, setRig] = React.useState('');
 
   const handleChange = (event) => {
@@ -45,7 +63,10 @@ export default function BasicTable() {
   return (
       
     <TableContainer className="table_container">
-        <h1 style={{margin:"-2rem 0rem 2rem 0rem"}}>Crew & Job Scheduling</h1>
+      <div style={{display:"flex", alignItems:"center", justifyContent:"space-between", marginTop:"-2rem"}}>
+        <h1 style={{marginLeft:"10px"}}>Crew & Job Scheduling</h1>
+        <Button onClick={handleOpen} style={{color:"#fff", backgroundColor:"rgba(46, 86, 247, 0.649)", width:"100px", textTransform:"inherit", marginRight:"10px"}}>Submit</Button>
+      </div>
     <div style={{backgroundColor:"beige", borderRadius:"22px", padding:"10px"}}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
@@ -75,10 +96,10 @@ export default function BasicTable() {
                   <h4>{row.fat}</h4>
               </TableCell>
               <TableCell align="right">
-                  <input type="date" style={{padding:"15px"}} />
+                  <input type="date" style={{padding:"15px", backgroundColor:"beige", border:"none"}} />
               </TableCell>
               <TableCell align="right">
-                  <input type="date" style={{padding:"15px"}} />
+                  <input type="date" style={{padding:"15px", backgroundColor:"beige", border:"none"}} />
               </TableCell>
               <TableCell align="right">
                   <Box sx={{ minWidth: 120 }}>
@@ -122,6 +143,23 @@ export default function BasicTable() {
         </TableBody>
       </Table>
       </div>
+      <div>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box style={{borderRadius:"22px"}} sx={style}>
+          <div>
+          <img style={{width:"150px", height:"150px", marginLeft:"120px", marginTop:"50px"}} src="https://c.tenor.com/bm8Q6yAlsPsAAAAi/verified.gif" alt="" />
+          </div>
+          <div>
+            <h2 style={{color:"green", marginLeft:"80px"}}>Submitted Successfully</h2>
+          </div>
+        </Box>
+      </Modal>
+    </div>
     </TableContainer>
   );
 }
