@@ -23,7 +23,7 @@ function Login() {
                 </div>
                 <div className="login__rightForm">
                     <form onSubmit={handleSubmit}>
-                        <input placeholder="email or username" type="text" onChange={(e) => setEmail(e.target.value)} value={email} required />
+                        <input placeholder="LDAP" type="text" onChange={(e) => setEmail(e.target.value)} value={email} required />
                         <input placeholder="password" type="password" onChange={(e) => setPassword(e.target.value)} value={password} required />
                         
                          <Button type="submit">Login</Button>
