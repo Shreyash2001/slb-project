@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/slb-project/static/css/main.d7182a29.css",
+    "main.js": "/slb-project/static/js/main.0e930445.js",
+    "index.html": "/slb-project/index.html",
+    "main.d7182a29.css.map": "/slb-project/static/css/main.d7182a29.css.map",
+    "main.0e930445.js.map": "/slb-project/static/js/main.0e930445.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7182a29.css",
+    "static/js/main.0e930445.js"
+  ]
+}
